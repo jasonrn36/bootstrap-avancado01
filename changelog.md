@@ -9,3 +9,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 add page with name cards-bootstrap intro the project
+add new pages in project and conteiners intro each one.
