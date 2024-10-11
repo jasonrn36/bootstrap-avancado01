@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <title>Menus em acordion</title>
+</head>
+<body>
+    <div id="Preguntas" class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#resposta1" aria-expanded="true" aria-controls="collapse1">
+                    Accordion em Bootstrap
+                </button>
+            </div>
+            <div id="resposta1" class="accordion-collapse collapse show" data-bs-parent="#Pergutas">
+                <div class="accordion-body">
+                    Aqui nós temos um exemplo de accordion em Bootstrap, o accordion nada mais é do que um menu estilizado com javascript.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#resposta2" aria-expanded="true" aria-controls="collapse2">
+                    Ao clicar nesta seta a direita ==>
+                </button>
+            </div>
+            <div id="resposta2" class="accordion-collapse collapse" data-bs-parent="#Perguntas">
+                <div class="accordion-body">
+                    Vejo que já aprendeu a mexer no menu do Bootstrap, ele é de extrema importância para vários tipos de sites e páginas onde temos que ter muitas opções com bastante conteúdo. 
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <a href="./button.html" class="btn btn-secondary">Próximo</a>
+    <a href="#" class="btn btn-success">Próximo</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
