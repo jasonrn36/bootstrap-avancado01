@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+
+    <title>Bootstrap - Carousel</title>
+</head>
+<body>
+    <div id="carousel-exemplo" class="carousel slide container" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="1000" class="carousel-item active">
+                <img src="./imgCarros/ford f-150 raptor.jpg">
+                <div class="carousel-caption">
+                    <h2>Ford F-150 Raptor</h2>
+                </div>
+            </div>
+            <div data-bs-interval="1000" class="carousel-item">
+                <img data-bs-interval="1000" src="./imgCarros/bmw.jpg">
+                <div class="carousel-caption">
+                    <h2>BMW Topzeira</h2>
+                </div>
+            </div>
+            <div data-bs-interval="1000" class="carousel-item">
+                <img data-bs-interval="1000" src="./imgCarros/F Mustang.jpg">
+                <div class="carousel-caption">
+                    <h2>Ford Mustang</h2>
+                </div>
+            </div>
+            <div data-bs-interval="1000" class="carousel-item">
+                <img src="./imgCarros/maclaren.jpg">
+                <div class="carousel-caption">
+                    <h2>Maclaren</h2>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <a href="./cards.html" class="btn btn-secondary">Voltar</a>
+        <a href="./cards.html" class="btn btn-primary">Próximo</a>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
