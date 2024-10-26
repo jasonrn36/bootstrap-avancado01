@@ -8,7 +8,37 @@
     <title>Modal - bootstrap</title>
 </head>
 <body>
-    
+    <div class="container">
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Abrir modal</button>
+        <div class="modal" id="exemplo-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Título da Modal</h5>
+                    </div>
+                        <div class="modal-body">
+                            <p>Aqui teremos o diálogo com o usuário, ou até mesmo um formulário de cadastro.
+                                <br />
+                                Pode ser também imagem, com um título acima e os botões abaixo.
+                                <br />
+                                <hr />
+                                e aqui abaixo teremos os botões de interação com o usuário,
+                                como cancelar, ok, cadastrar etc.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger">Cancelar</button>
+                            <button class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <hr />
+            <a href="./dropdown.html" class="btn btn-secondary">Voltar</a>
+            <a href="./navbar.html" class="btn btn-info">Voltar</a>
+        </div>
+
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
