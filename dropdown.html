@@ -3,9 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+
     <title>Dropdown</title>
 </head>
 <body>
+</div>
+<div class="container">
+    <h1>Botões dropdown</h1>
+            <!-- ÁREA DO DROPDOWN SEPARADO-->
+    <div class="container g-0">
+        <div class="btn-group">
+            <button data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle">Cadastrar</button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li class="dropdown-item">
+                    <a href="#">Novo usuário</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#">Novo fornecedor</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#">Novo cliente</a>
+                </li>
+            </ul>
+        </div>        
+    </div>
+    <h3>Botões Dropdown tema dark</h3>
+    <p>Neste exemplo temos os botões dropdown no mesmo botão, &nbsp;ao clicarmos no botão Cadastrar teremos uma função a função dropdown.
+         Além disso poderemos ver que o menu está no tema dark "escuro"</p>
+
+         <!-- ÁREA DO DROPDOWN SEPARADO-->
+         <div class="container g-0">
+            <div class="dropdown">
+                <button class="btn btn-primary">Cadastrar</button>
+                <button data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"></button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a href="#">Novo usuário</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">Novo fornecedor</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">Novo cliente</a>
+                    </li>
+                </ul>
+            </div>        
     
+        </div>
+        <h3>Botões Dropdown Separados</h3>
+        <p>Neste exemplo temos os botões dropdown separados, &nbsp;ao clicarmos no botão Cadastrar teremos uma determinada função,
+            já se clicarmos na seta ao lado teremos a função dropdown.</p>
+    
+         <!-- ÁREA DO DROPDOWN JUNTO-->
+    <div class="container g-0">
+        <div class="btn-group">
+            <button class="btn btn-primary">Cadastrar</button>
+            <button data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"></button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                    <a href="#">Novo usuário</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#">Novo fornecedor</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#">Novo cliente</a>
+                </li>
+            </ul>
+        </div>        
+    </div>
+    <h2>Botões Dropdown Agrupados</h2>
+    <p>Aqui neste exemplo temos os botões dropdown agrudados, &nbsp;ao clicarmos no botão Cadastrar teremos uma função 
+        já se clicarmos na seta ao lado teremos a função dropdown.
+    </p>
+
+        <!--ÁREA DE DECISÃO-->
+    <div class="container g-0">
+        <div class="btn-group">
+            <button class="btn btn-primary">Para mudar de página</button>
+            <button data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"></button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                    <a href="./carrousel.html" class="btn btn-secondary">Voltar</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="./modal.html" class="btn btn-success">Próximo</a>
+                </li>
+            </ul>
+        </div>        
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
