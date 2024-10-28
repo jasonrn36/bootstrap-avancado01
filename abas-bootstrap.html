@@ -3,13 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Aqui abaixo fica o link do bootstrap-->
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <!--Área de stilo CSS-->
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #f0f0f0;
+        }
+        .nav-link {
+            text-align: center;
+        }
+        section {
+            height: 100vh;
+            background-color: #fff;
+            padding-top: 70px;
+        }
+        header {
+            position:sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+    </style>
 
-    <title>Abas-bootstrap</title>
+    <title>Navbar</title>
 </head>
-<body>
-    <h1>Desenvolva Abas em Bootstrap</h1>
 
+<body>
+<!--Área do Cabeçalho-->
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Titulo do site</h1>
+                <!--Área do Botão navbar-->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon">
+                        <!--Este elemento é o menu principal em que estão dentro dele os botões do menu-->
+                    </span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#Inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Promoções">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+<!--Área das seções-->
+<div data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <section id="Inicio">
+        <h1>Início</h1>
+    </section>
+    <section id="Produtos">
+        <h1>Produtos</h1>
+        <div class="container">
+            <!--Aqui abaixo temos as abas feitas com um nav e dentro dele buttons-->
+            <nav class="nav nav-pills">
+                <button data-bs-toggle="tab" data-bs-target="#aba01" class="nav-link active" type="button">Adaptadores</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba02" class="nav-link" type="button">Áudio</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba03" class="nav-link" type="button">Acessórios</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba04" class="nav-link" type="button">Cases</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba05" class="nav-link" type="button">Computadores</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba06" class="nav-link" type="button">Drives</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba07" class="nav-link" type="button">Impressoras</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba08" class="nav-link" type="button">Mochilas</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba09" class="nav-link" type="button">Monitores</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba10" class="nav-link" type="button">Nobreacks</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba11" class="nav-link" type="button">Escritório</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba12" class="nav-link" type="button">Gamer</button>
+            </nav>
+            <!--Aqui abaixo estarão as div's referente a cada uma das abas-->
+            <div class="tab-content">
+                <div id="aba01" class="tab-pane active">
+                    Conteúdo da aba Adaptadores
+                </div>
+                <div id="aba02" class="tab-pane">
+                    Conteúdo da aba Áudio
+                </div>
+                <div id="aba03" class="tab-pane">
+                    Conteúdo da aba Acessórios
+                </div>
+                <div id="aba04" class="tab-pane">
+                    Conteúdo da aba Cases
+                </div>
+                <div id="aba05" class="tab-pane">
+                    Conteúdo da aba Computadores
+                </div>
+                <div id="aba06" class="tab-pane">
+                    Conteúdo da aba Drives
+                </div>
+                <div id="aba07" class="tab-pane">
+                    Conteúdo da aba Impressoras
+                </div>
+                <div id="aba08" class="tab-pane">
+                    Conteúdo da aba Mochilas
+                </div>
+                <div id="aba09" class="tab-pane">
+                    Conteúdo da aba Monitores
+                </div>
+                <div id="aba10" class="tab-pane">
+                    Conteúdo da aba Nobreacks
+                </div>
+                <div id="aba11" class="tab-pane">
+                    Conteúdo da aba Escritório
+                </div>
+                <div id="aba12" class="tab-pane">
+                    Conteúdo da aba Gamer
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="Promoções">
+        <h1>Promoções</h1>
+    </section>
+    <section id="Contato">
+        <h1>Contato</h1>
+        <a href="./navbar.html" class="btn btn-secondary">Voltar</a>
+        <a href="./toasts.html" class="btn btn-primary">Voltar</a>
+    </section>
+</div>
+
+
+<!--Área do script em java-->
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
