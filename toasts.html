@@ -57,6 +57,7 @@
                         </li>
                     </ul>
                 </nav>
+                <button id="btn-checar-emails" type="button" class="btn btn-warning">Checar caixa de mensagens</button>
             </div>
         </div>
     </header>
@@ -122,6 +123,21 @@
                     Conteúdo da aba Gamer
                 </div>
             </div>
+            <!--##################################-->
+            <!--Aqui temos a toasts 'Janela Poppup'-->
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div class="toast" data-bs-autohide="false" id="mensagens-alerta">
+                    <header class="toast-header">
+                        <strong>Importante</strong>
+                    </header>
+                    <div class="toast-body">
+                        <p class="p-3">Você possui 10 mensagens não lidas</p>
+                        <button class="btn btn-danger" style="margin-left: 70%;" data-bs-dismiss="toast">
+                            Descartar
+                        </button>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -136,7 +152,20 @@
 </div>
 
 
-<!--Área do script em java-->
+<!--Área link do script em java-->
     <script src="./lib/bootstrap.bundle.min.js"></script>
+
+<!--Aqui temos um script em java para o toast aparecer-->
+    <script>
+    const ativadorToast = document.getElementById('btn-checar-emails')
+        const mensagem = document.getElementById('mensagens-alerta')
+
+    if(ativadorToast){
+    ativadorToast.addEventListener('click', function(){
+        const toast = new bootstrap.Toast(mensagem)
+        toast.show()
+        })
+    }
+    </script>
 </body>
 </html>
